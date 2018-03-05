@@ -1,0 +1,30 @@
+#+TITLE: org-chef layer
+
+# The maximum height of the logo should be 200 pixels.
+[[./img/org-chef.png]]
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+- [[#key-bindings][Key bindings]]
+- [[#capture-template][Capture template]]
+
+* Description
+Easy setup for [[https://github.com/Chobbes/org-chef][org-chef]] 
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =org-chef= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+* Key bindings
+No keybindings.
+
+* Capture template
+I used the capture template suggested on the developers git.
+
+~(setq org-capture-templates
+      '(("c" "Cookbook" entry (file "~/org/cookbook.org")
+         "%(org-chef-get-recipe-from-url)"
+         :empty-lines 1)))~
