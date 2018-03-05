@@ -22,11 +22,5 @@ file.
 No keybindings.
 
 * Capture template
-I used the capture template suggested on the developers git.
+I used the capture template suggested on the developers git. You can edit the template via org-capture (M-x /org-capture/ [RET]). 
 
-```elisp
-(setq org-capture-templates
-      '(("c" "Cookbook" entry (file "~/org/cookbook.org")
-         "%(org-chef-get-recipe-from-url)"
-         :empty-lines 1)))
-```
