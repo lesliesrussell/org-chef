@@ -24,7 +24,9 @@ No keybindings.
 * Capture template
 I used the capture template suggested on the developers git.
 
-~(setq org-capture-templates
+#+BEGIN-EXAMPLE
+(setq org-capture-templates
       '(("c" "Cookbook" entry (file "~/org/cookbook.org")
          "%(org-chef-get-recipe-from-url)"
-         :empty-lines 1)))~
+         :empty-lines 1)))
+#+END-EXAMPLE
